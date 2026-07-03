@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ArrowRight, Phone, Mail, Send } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "./assets/logo.webp";
 
 
 const NAV_LINKS = [
@@ -23,7 +24,7 @@ export default function ContactUs() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex h-18 items-center justify-between py-4">
             <Link to="/" className="flex items-center gap-2">
-              <img src="/public/logo.webp" alt="Pondereth Logo" srcset="" className="size-10" />
+              <img src={logo} alt="Pondereth Logo" srcset="" className="size-10" />
               <span className="font-serif text-2xl font-bold tracking-tight text-emerald-800">
                 Pondereth
               </span>

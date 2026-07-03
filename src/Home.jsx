@@ -12,28 +12,10 @@ import imagecollage from "./assets/imagecollage.webp";
 import ponderethhero from "./assets/ponderethhero.webp";
 import trader from "./assets/trader.png";
 import escrow from "./assets/escrow.webp";
+import logo from "./assets/logo.webp"
 import listings from "./assets/listings.webp";
 import { Link } from "react-router-dom";
 
-/**
- * Pondereth Nigeria Enterprise Limited — Homepage
- * -----------------------------------------------
- * Design tokens (kept intentionally restrained per brief):
- *   Background : white (#FFFFFF), alt sections neutral-50 (#F9FAFB)
- *   Body text  : neutral-900 (near-black)
- *   Headings   : emerald-800 (primary), navy-900 used sparingly for one accent
- *   Type       : font-serif for headings (ledger/certificate feel),
- *                font-sans for body (clean, legible)
- *   Signature  : rotated "ESCROW VERIFIED" stamp + dashed manifest-style
- *                dividers and uppercase eyebrow tags between sections,
- *                echoing a shipping manifest / customs document.
- *
- * Notes:
- *  - All <img> tags have empty src — drop your own image paths in.
- *  - Requires Tailwind configured in the host project and lucide-react installed.
- *  - Every section after the hero uses a grid-cols-2 (md breakpoint) layout
- *    with one column for an image and one for text, alternating sides.
- */
 
 const NAV_LINKS = [
   { label: "Marketplace", href: "#marketplace" },
@@ -52,7 +34,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex h-18 items-center justify-between py-4">
             <a href="#" className="flex items-center gap-2">
-              <img src="/public/logo.webp" alt="Pondereth Logo" srcset="" className="size-10" />
+              <img src={logo} alt="Pondereth Logo" srcset="" className="size-10" />
               <span className="font-serif text-2xl font-bold tracking-tight text-emerald-800">
                 Pondereth
               </span>
