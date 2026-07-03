@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X, ArrowRight, Phone, Mail, Send } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "./assets/logo.webp";
-
+import support from "./assets/supportpondereth.png";
 
 const NAV_LINKS = [
   { label: "Marketplace", href: "/#marketplace" },
@@ -129,7 +129,7 @@ export default function ContactUs() {
             {/* Image side */}
             <div className="w-full aspect-[4/5] md:aspect-auto md:h-full min-h-[420px] bg-neutral-100 border border-neutral-200 rounded-xl overflow-hidden">
               <img
-                src=""
+                src={support}
                 alt="Pondereth support team ready to assist traders and hosts"
                 className="w-full h-full object-cover"
               />
